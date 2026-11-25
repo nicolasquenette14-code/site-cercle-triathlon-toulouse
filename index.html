@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cercle Triathlon Toulouse | Club de triathlon à Toulouse et Blagnac</title>
-<meta name="description" content="Club de triathlon au nord-ouest de Toulouse. Natation, vélo, course à pied et musculation encadrés, équipe féminine en D3, 60 licenciés maximum. Candidatures ouvertes.">
+<meta name="description" content="Club de triathlon au nord-ouest de Toulouse, un groupe soudé avant tout. Natation, vélo, course à pied et musculation encadrés, équipe féminine en D3, 60 licenciés maximum.">
 <link rel="canonical" href="https://cercletriathlontoulouse.fr/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#151a3d">
@@ -13,7 +13,7 @@
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Cercle Triathlon Toulouse">
 <meta property="og:title" content="Cercle Triathlon Toulouse, club de triathlon à Toulouse">
-<meta property="og:description" content="Entraînements encadrés dans les trois disciplines, équipe féminine en D3, effectif limité à 60 licenciés.">
+<meta property="og:description" content="Un club de triathlon où l'on s'entraîne, se soutient et court ensemble. Effectif limité à 60 licenciés.">
 <meta property="og:url" content="https://cercletriathlontoulouse.fr/">
 <meta property="og:image" content="https://cercletriathlontoulouse.fr/images/partage.jpg">
 <meta property="og:image:width" content="1200">
@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="images/galerie-2.jpg">
+<link rel="preload" as="image" href="images/accueil.jpg">
 
 <script type="application/ld+json">
 {
@@ -92,18 +92,38 @@ h3 { font-size: 1.25rem; }
 .bouton.clair:hover { background: var(--orange); color: var(--blanc); }
 .menu-bouton { display: none; background: none; border: 1px solid var(--filet); border-radius: 8px; padding: .5rem .75rem; font: inherit; font-weight: 700; cursor: pointer; color: var(--encre); }
 
-/* Accueil */
-.accueil { background: var(--encre); color: var(--blanc); display: grid; grid-template-columns: 1.05fr 1fr; min-height: calc(100svh - 72px); }
-.accueil-texte { padding: clamp(3rem, 7vw, 6.5rem) clamp(1.5rem, 5vw, 5rem); display: flex; flex-direction: column; justify-content: center; }
-.accueil h1 { font-size: clamp(3rem, 7.4vw, 6.4rem); font-weight: 900; margin-bottom: 1.75rem; }
+/* Accueil, photo pleine largeur puis titre */
+.accueil-photo { position: relative; height: min(78svh, 820px); min-height: 380px; background: var(--encre); }
+.accueil-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+.accueil-photo::after { content: ""; position: absolute; inset: auto 0 0 0; height: 10px; background: var(--bande); }
+.accueil { background: var(--encre); color: var(--blanc); }
+.accueil .enveloppe { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: end; padding: clamp(3rem, 6vw, 5rem) 0; }
+.accueil h1 { font-size: clamp(3rem, 7.4vw, 6.4rem); font-weight: 900; }
 .accueil h1 .ligne { display: block; }
 .accueil h1 .ligne + .ligne { background: var(--bande); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: .08em; }
-.accueil p { font-size: 1.2rem; color: rgba(255,255,255,.78); max-width: 46ch; margin-bottom: 2.25rem; }
+.accueil p { font-size: 1.2rem; color: rgba(255,255,255,.8); max-width: 46ch; margin-bottom: 2rem; }
 .accueil-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
 .accueil-actions .lien { color: var(--blanc); font-weight: 700; text-underline-offset: 5px; }
-.accueil-photo { position: relative; overflow: hidden; }
-.accueil-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; }
-.accueil-photo::after { content: ""; position: absolute; inset: auto 0 0 0; height: 10px; background: var(--bande); }
+
+/* Esprit de famille */
+.famille { background: var(--blanc); }
+.famille-tete { max-width: 62ch; margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+.famille-tete .chapo { color: var(--encre); font-size: 1.3rem; }
+.recit { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+.recit + .recit { margin-top: clamp(4rem, 8vw, 6.5rem); }
+.recit.inverse > :first-child { order: 2; }
+.recit img { width: 100%; border-radius: 6px; object-fit: cover; }
+.recit h3 { font-size: clamp(1.5rem, 2.6vw, 2.1rem); margin-bottom: 1rem; }
+.recit p { color: var(--gris); max-width: 52ch; }
+.recit p + p { margin-top: .9rem; }
+.duo { display: grid; grid-template-columns: 1.5fr 1fr; gap: 1rem; align-items: stretch; }
+.duo img { height: 100%; aspect-ratio: auto; }
+.duo img:first-child { aspect-ratio: 3 / 2; }
+.duo img:last-child { aspect-ratio: 3 / 4; object-position: 50% 30%; }
+
+/* En images */
+.mosaique { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.mosaique img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 6px; }
 
 /* Repères */
 .reperes { background: var(--blanc); border-bottom: 1px solid var(--filet); }
@@ -146,7 +166,7 @@ section { padding: clamp(4rem, 9vw, 7rem) 0; }
 /* Équipe féminine */
 .feminines { background: var(--encre); color: var(--blanc); padding: 0; }
 .feminines-grille { display: grid; grid-template-columns: 1fr 1fr; }
-.feminines-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 40% 50%; min-height: 420px; }
+.feminines-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; min-height: 420px; max-height: 760px; }
 .feminines-texte { padding: clamp(3rem, 7vw, 6rem) clamp(1.5rem, 5vw, 5rem); display: flex; flex-direction: column; justify-content: center; }
 .feminines-texte p { color: rgba(255,255,255,.8); max-width: 50ch; }
 .palmares { list-style: none; margin-top: 2rem; display: grid; gap: .9rem; }
@@ -210,8 +230,11 @@ dialog .fermer { float: right; }
   .menu { display: none; position: absolute; top: 72px; left: 0; right: 0; background: var(--blanc); flex-direction: column; align-items: flex-start; padding: 1.5rem; gap: 1.1rem; border-bottom: 1px solid var(--filet); }
   .menu.ouvert { display: flex; }
   .menu-bouton { display: block; }
-  .accueil, .club, .adhesion, .feminines-grille, .candidature { grid-template-columns: 1fr; }
-  .accueil-photo { height: 52vh; order: -1; }
+  .accueil .enveloppe, .club, .adhesion, .feminines-grille, .candidature, .recit { grid-template-columns: 1fr; }
+  .recit.inverse > :first-child { order: 0; }
+  .accueil-photo { height: 46vh; }
+  .mosaique { grid-template-columns: 1fr 1fr; }
+  .mosaique img:last-child { grid-column: 1 / -1; aspect-ratio: 3 / 2; }
   .reperes ul { grid-template-columns: 1fr 1fr; }
   .reperes li { border-left: 0; padding-left: 0; border-top: 1px solid var(--filet); }
   .flux { grid-template-columns: repeat(2, 1fr); }
@@ -248,17 +271,20 @@ dialog .fermer { float: right; }
 
 <main id="haut">
 
+  <div class="accueil-photo">
+    <img src="images/accueil.jpg" alt="Les athlètes du Cercle Triathlon Toulouse réunis et souriants après une course" width="2048" height="1536" fetchpriority="high">
+  </div>
+
   <div class="accueil">
-    <div class="accueil-texte">
+    <div class="enveloppe">
       <h1><span class="ligne">Progresser,</span><span class="ligne">ensemble.</span></h1>
-      <p>Club de triathlon au nord-ouest de Toulouse. Des entraînements encadrés dans les trois disciplines, une planification pensée pour durer, et un groupe volontairement limité à 60 licenciés.</p>
-      <div class="accueil-actions">
-        <a class="bouton clair" href="#candidature">Candidater au club</a>
-        <a class="lien" href="#semaine">Voir les entraînements</a>
+      <div>
+        <p>Au Cercle Triathlon Toulouse, on est une famille avant d'être une équipe. C'est cet esprit de groupe qui nous fait progresser, et qui nous permet de performer.</p>
+        <div class="accueil-actions">
+          <a class="bouton clair" href="#candidature">Rejoindre la famille</a>
+          <a class="lien" href="#semaine">Voir les entraînements</a>
+        </div>
       </div>
-    </div>
-    <div class="accueil-photo">
-      <img src="images/galerie-2.jpg" alt="Six athlètes du Cercle Triathlon Toulouse en tenue du club après une course" width="1080" height="1079" fetchpriority="high">
     </div>
   </div>
 
@@ -271,28 +297,41 @@ dialog .fermer { float: right; }
     </ul>
   </div>
 
-  <section id="club">
-    <div class="enveloppe club">
-      <div>
-        <h2>Un club construit autour de l'entraînement</h2>
-        <p class="chapo">Le Cercle Triathlon Toulouse est né en 2024. Ici, chaque séance a une place dans la saison, et chaque licencié sait pourquoi il la fait.</p>
-        <ul class="principes">
-          <li>
-            <h3>Une saison planifiée</h3>
-            <p>Les séances suivent une logique commune entre natation, vélo et course à pied, du travail de fond de l'hiver jusqu'aux objectifs d'été.</p>
-          </li>
-          <li>
-            <h3>Un suivi pour chacun</h3>
-            <p>Les séances collectives sont publiées sur TrainingPeaks et adaptées au niveau de chaque licencié, du premier triathlon à l'Ironman.</p>
-          </li>
-          <li>
-            <h3>La santé d'abord</h3>
-            <p>On construit des athlètes pour plusieurs saisons. La régularité et l'absence de blessure passent avant le chrono du dimanche.</p>
-          </li>
-        </ul>
+  <section id="club" class="famille">
+    <div class="enveloppe">
+      <div class="famille-tete">
+        <h2>Une famille avant d'être une équipe</h2>
+        <p class="chapo">On ne vient pas au club seulement pour faire des séances. On y vient pour un groupe qui s'entraîne ensemble, se pousse et se retrouve. La performance arrive parce que personne ne s'entraîne seul.</p>
       </div>
-      <div class="club-photo">
-        <img src="images/galerie-4.jpg" alt="Athlètes du club alignés au départ d'une course" width="1080" height="1081" loading="lazy">
+
+      <div class="recit">
+        <img src="images/natation-groupe.jpg" alt="Le groupe du club au bord du bassin après une séance de natation" width="1800" height="1350" loading="lazy">
+        <div>
+          <h3>Un club construit autour de l'entraînement</h3>
+          <p>Natation, vélo, course à pied, musculation. Chaque semaine, quatre séances encadrées réunissent tout le monde, du premier triathlon à l'Ironman.</p>
+          <p>Les séances suivent une même logique sur toute la saison et sont adaptées au niveau de chacun. On progresse à son rythme, mais jamais seul dans sa ligne d'eau.</p>
+        </div>
+      </div>
+
+      <div class="recit inverse">
+        <img src="images/soutien.jpg" alt="Deux athlètes du club encouragent un coéquipier à vélo sur une route de montagne" width="1600" height="1066" loading="lazy">
+        <div>
+          <h3>On se soutient sur les objectifs de chacun</h3>
+          <p>Un premier triathlon, un Ironman, une qualification. Quand l'un de nous a un objectif, c'est tout le club qui le prépare avec lui.</p>
+          <p>Et le jour J, on est au bord de la route pour pousser ceux qui courent.</p>
+        </div>
+      </div>
+
+      <div class="recit">
+        <div class="duo">
+          <img src="images/combinaisons.jpg" alt="Quatre athlètes du club en combinaison sur la plage avant un départ de triathlon" width="1800" height="1200" loading="lazy">
+          <img src="images/course-groupe.jpg" alt="Le groupe du club réuni en tenue après une course" width="1350" height="1800" loading="lazy">
+        </div>
+        <div>
+          <h3>Les courses, on les vit ensemble</h3>
+          <p>On choisit souvent les mêmes courses pour s'y retrouver. Départs en groupe, encouragements, et un moment ensemble après l'arrivée.</p>
+          <p>Ces week-ends de course font autant le club que les entraînements.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -341,7 +380,7 @@ dialog .fermer { float: right; }
   <section class="feminines" aria-labelledby="titre-feminines">
     <div class="feminines-grille">
       <div class="feminines-photo">
-        <img src="images/galerie-3.jpg" alt="Athlète de l'équipe féminine du club en contre-la-montre à vélo" width="1080" height="1084" loading="lazy">
+        <img src="images/podium-feminines.jpg" alt="L'équipe féminine du club sur le podium du Grand Prix de duathlon de Poitiers" width="900" height="1600" loading="lazy">
       </div>
       <div class="feminines-texte">
         <h2 id="titre-feminines">L'équipe féminine</h2>
@@ -352,6 +391,14 @@ dialog .fermer { float: right; }
           <li>Championne d'Occitanie</li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <section class="images" aria-label="Le club en images">
+    <div class="enveloppe mosaique">
+      <img src="images/chrono.jpg" alt="Athlète du club en position de contre-la-montre" width="889" height="1528" loading="lazy">
+      <img src="images/tunnel.jpg" alt="Le groupe vélo du club sous un tunnel pendant un stage" width="853" height="1280" loading="lazy">
+      <img src="images/course-velo.jpg" alt="Quatre athlètes du club à vélo pendant une course" width="1200" height="1800" loading="lazy">
     </div>
   </section>
 
