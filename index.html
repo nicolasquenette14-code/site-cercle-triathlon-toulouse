@@ -3,16 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cercle Triathlon Toulouse | Club de triathlon à Toulouse et Blagnac</title>
+<title>Club de triathlon à Toulouse et Blagnac | Cercle Triathlon Toulouse</title>
 <meta name="description" content="Club de triathlon au nord-ouest de Toulouse, un groupe soudé avant tout. Natation, vélo, course à pied et musculation encadrés, équipe féminine en D3, 60 licenciés maximum.">
 <link rel="canonical" href="https://cercletriathlontoulouse.fr/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#151a3d">
+<meta name="geo.region" content="FR-31">
+<meta name="geo.placename" content="Toulouse">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Cercle Triathlon Toulouse">
-<meta property="og:title" content="Cercle Triathlon Toulouse, club de triathlon à Toulouse">
+<meta property="og:title" content="Cercle Triathlon Toulouse, club de triathlon à Toulouse et Blagnac">
 <meta property="og:description" content="Un club de triathlon où l'on s'entraîne, se soutient et court ensemble. Effectif limité à 60 licenciés.">
 <meta property="og:url" content="https://cercletriathlontoulouse.fr/">
 <meta property="og:image" content="https://cercletriathlontoulouse.fr/images/partage.jpg">
@@ -26,24 +28,49 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="images/accueil.jpg">
+<link rel="preload" as="image" href="images/accueil-1600.webp" imagesrcset="images/accueil-800.webp 800w, images/accueil-1600.webp 1600w" imagesizes="100vw">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SportsClub",
-  "name": "Cercle Triathlon Toulouse",
-  "alternateName": "CTT",
-  "url": "https://cercletriathlontoulouse.fr/",
-  "logo": "https://cercletriathlontoulouse.fr/images/logo-ctt.jpg",
-  "image": "https://cercletriathlontoulouse.fr/images/partage.jpg",
-  "description": "Club de triathlon affilié FFTRI au nord-ouest de Toulouse, entraînements encadrés en natation, vélo, course à pied et musculation.",
-  "sport": ["Triathlon", "Duathlon"],
-  "foundingDate": "2024",
-  "email": "cercletriathlontoulouse@gmail.com",
-  "address": { "@type": "PostalAddress", "addressLocality": "Toulouse", "addressRegion": "Occitanie", "addressCountry": "FR" },
-  "areaServed": ["Toulouse", "Blagnac", "Aussonne", "Beauzelle", "Cornebarrieu"],
-  "sameAs": ["https://instagram.com/cercletriathlontoulouse", "https://www.strava.com/clubs/1325944"]
+  "@graph": [
+    {
+      "@type": "SportsClub",
+      "@id": "https://cercletriathlontoulouse.fr/#club",
+      "name": "Cercle Triathlon Toulouse",
+      "alternateName": ["CTT", "Cercle Triathlon"],
+      "url": "https://cercletriathlontoulouse.fr/",
+      "logo": "https://cercletriathlontoulouse.fr/images/logo-ctt.jpg",
+      "image": "https://cercletriathlontoulouse.fr/images/partage.jpg",
+      "description": "Club de triathlon affilié FFTRI au nord-ouest de Toulouse et à Blagnac. Entraînements encadrés en natation, vélo, course à pied et musculation, équipe féminine en D3 duathlon.",
+      "sport": ["Triathlon", "Duathlon"],
+      "foundingDate": "2024",
+      "email": "cercletriathlontoulouse@gmail.com",
+      "priceRange": "180 € à 250 € par an",
+      "address": { "@type": "PostalAddress", "addressLocality": "Toulouse", "postalCode": "31000", "addressRegion": "Occitanie", "addressCountry": "FR" },
+      "areaServed": ["Toulouse", "Blagnac", "Aussonne", "Beauzelle", "Cornebarrieu", "Colomiers"],
+      "memberOf": { "@type": "SportsOrganization", "name": "Fédération française de triathlon" },
+      "sameAs": ["https://instagram.com/cercletriathlontoulouse", "https://www.strava.com/clubs/1325944"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cercletriathlontoulouse.fr/#site",
+      "url": "https://cercletriathlontoulouse.fr/",
+      "name": "Cercle Triathlon Toulouse",
+      "inLanguage": "fr-FR",
+      "publisher": { "@id": "https://cercletriathlontoulouse.fr/#club" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Où s'entraîne le Cercle Triathlon Toulouse ?", "acceptedAnswer": { "@type": "Answer", "text": "Au nord-ouest de Toulouse. Course à pied sur la piste de Sesquières à Toulouse, natation à la piscine de Blagnac, sorties vélo au départ d'Aeroscopia à Blagnac et musculation chez Premium Sport." } },
+        { "@type": "Question", "name": "Le club accepte-t-il les débutants en triathlon ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Les séances sont adaptées au niveau de chacun, du premier triathlon jusqu'à l'Ironman. La formule Loisir permet de s'entraîner avec le groupe sans faire de compétition." } },
+        { "@type": "Question", "name": "Combien coûte l'adhésion au club ?", "acceptedAnswer": { "@type": "Answer", "text": "250 € par an pour la formule Compétition et 180 € par an pour la formule Loisir. Le club prend en charge une partie de la licence des athlètes féminines." } },
+        { "@type": "Question", "name": "Comment rejoindre le club ?", "acceptedAnswer": { "@type": "Answer", "text": "Envoyez votre candidature avec le formulaire du site. L'effectif est limité à 60 licenciés pour garder un vrai suivi. La licence FFTRI se prend ensuite en ligne." } },
+        { "@type": "Question", "name": "Y a-t-il une équipe féminine ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. L'équipe féminine court en D3 duathlon. En 2026, elle a terminé 6e de la finale du championnat de France et championne d'Occitanie." } }
+      ]
+    }
+  ]
 }
 </script>
 
@@ -100,6 +127,7 @@ h3 { font-size: 1.25rem; }
 .accueil .enveloppe { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: end; padding: clamp(3rem, 6vw, 5rem) 0; }
 .accueil h1 { font-size: clamp(3rem, 7.4vw, 6.4rem); font-weight: 900; }
 .accueil h1 .ligne { display: block; }
+.accueil h1 .sur-titre { display: block; font-size: 1.05rem; font-weight: 700; font-stretch: 100%; letter-spacing: 0; color: rgba(255,255,255,.7); margin-bottom: 1rem; }
 .accueil h1 .ligne + .ligne { background: var(--bande); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: .08em; }
 .accueil p { font-size: 1.2rem; color: rgba(255,255,255,.8); max-width: 46ch; margin-bottom: 2rem; }
 .accueil-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
@@ -199,6 +227,16 @@ section { padding: clamp(4rem, 9vw, 7rem) 0; }
 .coaching-boite p { color: var(--gris); }
 .coaching-boite h3 { margin-bottom: .3rem; }
 
+/* Questions fréquentes */
+.questions { background: var(--blanc); }
+.faq { margin-top: 2rem; border-top: 1px solid var(--filet); max-width: 860px; }
+.faq details { border-bottom: 1px solid var(--filet); }
+.faq summary { cursor: pointer; padding: 1.25rem 2.5rem 1.25rem 0; font-weight: 700; font-size: 1.1rem; list-style: none; position: relative; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: .25rem; top: 1.05rem; font-size: 1.5rem; font-weight: 400; color: var(--violet); }
+.faq details[open] summary::after { content: "\2212"; }
+.faq details p { color: var(--gris); padding-bottom: 1.25rem; max-width: 70ch; }
+
 /* Candidature */
 .candidature { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(2rem, 6vw, 5rem); align-items: start; }
 .formulaire { display: grid; gap: 1rem; background: var(--blanc); border: 1px solid var(--filet); border-radius: 6px; padding: 2rem; }
@@ -264,6 +302,7 @@ dialog .fermer { float: right; }
       <li><a href="#adhesion">Adhésion</a></li>
       <li><a href="#actualites">Actualités</a></li>
       <li><a href="#partenaires">Partenaires</a></li>
+      <li><a href="#questions">Questions</a></li>
       <li><a class="bouton" href="#candidature">Candidater</a></li>
     </ul>
   </div>
@@ -272,12 +311,12 @@ dialog .fermer { float: right; }
 <main id="haut">
 
   <div class="accueil-photo">
-    <img src="images/accueil.jpg" alt="Les athlètes du Cercle Triathlon Toulouse réunis et souriants après une course" width="2048" height="1536" fetchpriority="high">
+    <img src="images/accueil-1600.webp" srcset="images/accueil-800.webp 800w, images/accueil-1600.webp 1600w" sizes="100vw" alt="Les triathlètes du Cercle Triathlon Toulouse réunis après un duathlon" width="2048" height="1536" fetchpriority="high">
   </div>
 
   <div class="accueil">
     <div class="enveloppe">
-      <h1><span class="ligne">Progresser,</span><span class="ligne">ensemble.</span></h1>
+      <h1><span class="sur-titre">Club de triathlon à Toulouse et Blagnac</span><span class="ligne">Progresser,</span><span class="ligne">ensemble.</span></h1>
       <div>
         <p>Au Cercle Triathlon Toulouse, on est une famille avant d'être une équipe. C'est cet esprit de groupe qui nous fait progresser, et qui nous permet de performer.</p>
         <div class="accueil-actions">
@@ -305,7 +344,7 @@ dialog .fermer { float: right; }
       </div>
 
       <div class="recit">
-        <img src="images/natation-groupe.jpg" alt="Le groupe du club au bord du bassin après une séance de natation" width="1800" height="1350" loading="lazy">
+        <img src="images/natation-groupe-1600.webp" srcset="images/natation-groupe-800.webp 800w, images/natation-groupe-1600.webp 1600w" sizes="(max-width: 960px) 100vw, 640px" alt="Séance de natation du club de triathlon à la piscine, groupe du Cercle Triathlon Toulouse" width="1800" height="1350" loading="lazy">
         <div>
           <h3>Un club construit autour de l'entraînement</h3>
           <p>Natation, vélo, course à pied, musculation. Chaque semaine, quatre séances encadrées réunissent tout le monde, du premier triathlon à l'Ironman.</p>
@@ -314,7 +353,7 @@ dialog .fermer { float: right; }
       </div>
 
       <div class="recit inverse">
-        <img src="images/soutien.jpg" alt="Deux athlètes du club encouragent un coéquipier à vélo sur une route de montagne" width="1600" height="1066" loading="lazy">
+        <img src="images/soutien-1600.webp" srcset="images/soutien-800.webp 800w, images/soutien-1600.webp 1600w" sizes="(max-width: 960px) 100vw, 560px" alt="Deux athlètes du club encouragent un coéquipier à vélo sur une route de montagne" width="1600" height="1066" loading="lazy">
         <div>
           <h3>On se soutient sur les objectifs de chacun</h3>
           <p>Un premier triathlon, un Ironman, une qualification. Quand l'un de nous a un objectif, c'est tout le club qui le prépare avec lui.</p>
@@ -324,8 +363,8 @@ dialog .fermer { float: right; }
 
       <div class="recit">
         <div class="duo">
-          <img src="images/combinaisons.jpg" alt="Quatre athlètes du club en combinaison sur la plage avant un départ de triathlon" width="1800" height="1200" loading="lazy">
-          <img src="images/course-groupe.jpg" alt="Le groupe du club réuni en tenue après une course" width="1350" height="1800" loading="lazy">
+          <img src="images/combinaisons-1600.webp" srcset="images/combinaisons-800.webp 800w, images/combinaisons-1600.webp 1600w" sizes="(max-width: 960px) 60vw, 380px" alt="Quatre athlètes du club en combinaison sur la plage avant un départ de triathlon" width="1800" height="1200" loading="lazy">
+          <img src="images/course-groupe-1600.webp" srcset="images/course-groupe-800.webp 800w, images/course-groupe-1600.webp 1600w" sizes="(max-width: 960px) 40vw, 250px" alt="Le groupe du club réuni en tenue après une course" width="1350" height="1800" loading="lazy">
         </div>
         <div>
           <h3>Les courses, on les vit ensemble</h3>
@@ -338,8 +377,8 @@ dialog .fermer { float: right; }
 
   <section id="semaine" class="semaine">
     <div class="enveloppe">
-      <h2>La semaine d'entraînement</h2>
-      <p class="chapo">Quatre rendez-vous encadrés, au nord-ouest de Toulouse. Le contenu de chaque séance est publié chaque semaine sur TrainingPeaks.</p>
+      <h2>Les entraînements de triathlon</h2>
+      <p class="chapo">Quatre séances encadrées par semaine entre Toulouse et Blagnac, en natation, vélo, course à pied et musculation. Le contenu de chaque séance est publié chaque semaine sur TrainingPeaks.</p>
       <table class="planning">
         <thead>
           <tr><th scope="col">Jour</th><th scope="col">Séance</th><th scope="col">Horaire</th><th scope="col">Lieu</th></tr>
@@ -358,7 +397,7 @@ dialog .fermer { float: right; }
   <section id="adhesion">
     <div class="enveloppe adhesion">
       <div>
-        <h2>Adhésion annuelle</h2>
+        <h2>Adhésion et licence</h2>
         <p class="chapo">La licence FFTRI se prend en ligne sur l'espace Tri de la fédération, une fois la candidature acceptée.</p>
         <p class="note">Le club prend en charge une partie de la licence des athlètes féminines.</p>
       </div>
@@ -380,14 +419,14 @@ dialog .fermer { float: right; }
   <section class="feminines" aria-labelledby="titre-feminines">
     <div class="feminines-grille">
       <div class="feminines-photo">
-        <img src="images/podium-feminines.jpg" alt="L'équipe féminine du club sur le podium du Grand Prix de duathlon de Poitiers" width="900" height="1600" loading="lazy">
+        <img src="images/podium-feminines-1600.webp" srcset="images/podium-feminines-800.webp 800w, images/podium-feminines-1600.webp 1600w" sizes="(max-width: 960px) 100vw, 50vw" alt="Équipe féminine du Cercle Triathlon Toulouse sur le podium du Grand Prix de duathlon à Poitiers" width="900" height="1600" loading="lazy">
       </div>
       <div class="feminines-texte">
-        <h2 id="titre-feminines">L'équipe féminine</h2>
+        <h2 id="titre-feminines">L'équipe féminine de triathlon et duathlon</h2>
         <p>La féminisation est un axe fort du club, avec une part de licenciées bien au-dessus de la moyenne fédérale. En 2026, l'équipe féminine a disputé sa première saison en D3 duathlon.</p>
         <ul class="palmares">
           <li>6e de la finale du championnat de France D3 duathlon 2026</li>
-          <li>Seul club d'Occitanie qualifié pour cette finale</li>
+          <li>Seul club d'Occitanie présent à cette finale</li>
           <li>Championne d'Occitanie</li>
         </ul>
       </div>
@@ -396,9 +435,9 @@ dialog .fermer { float: right; }
 
   <section class="images" aria-label="Le club en images">
     <div class="enveloppe mosaique">
-      <img src="images/chrono.jpg" alt="Athlète du club en position de contre-la-montre" width="889" height="1528" loading="lazy">
-      <img src="images/tunnel.jpg" alt="Le groupe vélo du club sous un tunnel pendant un stage" width="853" height="1280" loading="lazy">
-      <img src="images/course-velo.jpg" alt="Quatre athlètes du club à vélo pendant une course" width="1200" height="1800" loading="lazy">
+      <img src="images/chrono-1600.webp" srcset="images/chrono-800.webp 800w, images/chrono-1600.webp 1600w" sizes="(max-width: 960px) 50vw, 380px" alt="Athlète du club en position de contre-la-montre" width="889" height="1528" loading="lazy">
+      <img src="images/tunnel-1600.webp" srcset="images/tunnel-800.webp 800w, images/tunnel-1600.webp 1600w" sizes="(max-width: 960px) 50vw, 380px" alt="Le groupe vélo du club sous un tunnel pendant un stage" width="853" height="1280" loading="lazy">
+      <img src="images/course-velo-1600.webp" srcset="images/course-velo-800.webp 800w, images/course-velo-1600.webp 1600w" sizes="(max-width: 960px) 100vw, 380px" alt="Quatre athlètes du club à vélo pendant une course" width="1200" height="1800" loading="lazy">
     </div>
   </section>
 
@@ -443,6 +482,34 @@ dialog .fermer { float: right; }
       <a class="bouton" href="https://www.cercleendurance.com/" target="_blank" rel="noopener">Découvrir Cercle Endurance</a>
     </aside>
   </div>
+
+  <section id="questions" class="questions">
+    <div class="enveloppe">
+      <h2>Questions fréquentes</h2>
+      <div class="faq">
+        <details>
+          <summary>Où s'entraîne le Cercle Triathlon Toulouse ?</summary>
+          <p>Au nord-ouest de Toulouse. Course à pied sur la piste de Sesquières à Toulouse, natation à la piscine de Blagnac, sorties vélo au départ d'Aeroscopia à Blagnac et musculation chez Premium Sport.</p>
+        </details>
+        <details>
+          <summary>Le club accepte-t-il les débutants en triathlon ?</summary>
+          <p>Oui. Les séances sont adaptées au niveau de chacun, du premier triathlon jusqu'à l'Ironman. La formule Loisir permet de s'entraîner avec le groupe sans faire de compétition.</p>
+        </details>
+        <details>
+          <summary>Combien coûte l'adhésion au club ?</summary>
+          <p>250 € par an pour la formule Compétition et 180 € par an pour la formule Loisir. Le club prend en charge une partie de la licence des athlètes féminines.</p>
+        </details>
+        <details>
+          <summary>Comment rejoindre le club ?</summary>
+          <p>Envoyez votre candidature avec le formulaire en bas de page. L'effectif est limité à 60 licenciés pour garder un vrai suivi, on vous répond rapidement. La licence FFTRI se prend ensuite en ligne.</p>
+        </details>
+        <details>
+          <summary>Y a-t-il une équipe féminine ?</summary>
+          <p>Oui. L'équipe féminine court en D3 duathlon. En 2026, elle a terminé 6e de la finale du championnat de France et championne d'Occitanie.</p>
+        </details>
+      </div>
+    </div>
+  </section>
 
   <section id="candidature">
     <div class="enveloppe candidature">
