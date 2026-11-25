@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cercle Triathlon Toulouse | Club de triathlon à Toulouse et Blagnac</title>
+<meta name="description" content="Club de triathlon au nord-ouest de Toulouse. Natation, vélo, course à pied et musculation encadrés, équipe féminine en D3, 60 licenciés maximum. Candidatures ouvertes.">
+<link rel="canonical" href="https://cercletriathlontoulouse.fr/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#151a3d">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Cercle Triathlon Toulouse">
+<meta property="og:title" content="Cercle Triathlon Toulouse, club de triathlon à Toulouse">
+<meta property="og:description" content="Entraînements encadrés dans les trois disciplines, équipe féminine en D3, effectif limité à 60 licenciés.">
+<meta property="og:url" content="https://cercletriathlontoulouse.fr/">
+<meta property="og:image" content="https://cercletriathlontoulouse.fr/images/partage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" sizes="192x192" href="images/icone-192.png">
+<link rel="apple-touch-icon" href="images/icone-180.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/galerie-2.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsClub",
+  "name": "Cercle Triathlon Toulouse",
+  "alternateName": "CTT",
+  "url": "https://cercletriathlontoulouse.fr/",
+  "logo": "https://cercletriathlontoulouse.fr/images/logo-ctt.jpg",
+  "image": "https://cercletriathlontoulouse.fr/images/partage.jpg",
+  "description": "Club de triathlon affilié FFTRI au nord-ouest de Toulouse, entraînements encadrés en natation, vélo, course à pied et musculation.",
+  "sport": ["Triathlon", "Duathlon"],
+  "foundingDate": "2025",
+  "email": "cercletriathlontoulouse@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Toulouse", "addressRegion": "Occitanie", "addressCountry": "FR" },
+  "areaServed": ["Toulouse", "Blagnac", "Aussonne", "Beauzelle", "Cornebarrieu"],
+  "sameAs": ["https://instagram.com/cercletriathlontoulouse", "https://www.strava.com/clubs/1325944"]
+}
+</script>
+
+<style>
+:root {
+  --encre: #151a3d;      /* bas de la tenue */
+  --encre-2: #232a5c;
+  --papier: #f4f5f9;
+  --blanc: #ffffff;
+  --orange: #f0592a;
+  --magenta: #c0287f;
+  --violet: #6a2bd4;
+  --bleu: #2d4fd6;
+  --gris: #5b6280;
+  --filet: rgba(21, 26, 61, .12);
+  --bande: linear-gradient(90deg, var(--orange) 0%, var(--magenta) 38%, var(--violet) 68%, var(--bleu) 100%);
+  --large: "Archivo", system-ui, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
+body { font-family: var(--large); font-stretch: 100%; background: var(--papier); color: var(--encre); font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+.enveloppe { width: min(1180px, 100% - 3rem); margin-inline: auto; }
+
+/* Titres en largeur étendue, comme le lettrage de la tenue */
+h1, h2, h3 { font-stretch: 125%; font-weight: 850; line-height: 1.02; letter-spacing: -.01em; }
+h2 { font-size: clamp(2rem, 4.2vw, 3.25rem); margin-bottom: 1.25rem; }
+h3 { font-size: 1.25rem; }
+.chapo { font-size: 1.2rem; color: var(--gris); max-width: 58ch; }
+.bande { height: 10px; background: var(--bande); }
+
+/* En-tête */
+.entete { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--filet); }
+.entete .enveloppe { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 1rem; }
+.marque { display: flex; align-items: center; gap: .7rem; text-decoration: none; font-stretch: 125%; font-weight: 850; font-size: 1rem; line-height: 1.05; }
+.marque img { width: 44px; height: 44px; border-radius: 50%; }
+.menu { display: flex; align-items: center; gap: 1.6rem; list-style: none; font-weight: 600; font-size: .95rem; }
+.menu a { text-decoration: none; }
+.menu a:hover { color: var(--violet); }
+.bouton { display: inline-block; background: var(--encre); color: var(--blanc); text-decoration: none; font-weight: 700; padding: .85rem 1.4rem; border-radius: 999px; border: 0; cursor: pointer; font: inherit; font-weight: 700; transition: background .2s; }
+.bouton:hover { background: var(--violet); }
+.bouton.clair { background: var(--blanc); color: var(--encre); }
+.bouton.clair:hover { background: var(--orange); color: var(--blanc); }
+.menu-bouton { display: none; background: none; border: 1px solid var(--filet); border-radius: 8px; padding: .5rem .75rem; font: inherit; font-weight: 700; cursor: pointer; color: var(--encre); }
+
+/* Accueil */
+.accueil { background: var(--encre); color: var(--blanc); display: grid; grid-template-columns: 1.05fr 1fr; min-height: calc(100svh - 72px); }
+.accueil-texte { padding: clamp(3rem, 7vw, 6.5rem) clamp(1.5rem, 5vw, 5rem); display: flex; flex-direction: column; justify-content: center; }
+.accueil h1 { font-size: clamp(3rem, 7.4vw, 6.4rem); font-weight: 900; margin-bottom: 1.75rem; }
+.accueil h1 .ligne { display: block; }
+.accueil h1 .ligne + .ligne { background: var(--bande); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: .08em; }
+.accueil p { font-size: 1.2rem; color: rgba(255,255,255,.78); max-width: 46ch; margin-bottom: 2.25rem; }
+.accueil-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+.accueil-actions .lien { color: var(--blanc); font-weight: 700; text-underline-offset: 5px; }
+.accueil-photo { position: relative; overflow: hidden; }
+.accueil-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; }
+.accueil-photo::after { content: ""; position: absolute; inset: auto 0 0 0; height: 10px; background: var(--bande); }
+
+/* Repères */
+.reperes { background: var(--blanc); border-bottom: 1px solid var(--filet); }
+.reperes ul { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); }
+.reperes li { padding: 1.75rem 1.25rem; border-left: 1px solid var(--filet); }
+.reperes li:first-child { border-left: 0; padding-left: 0; }
+.reperes strong { display: block; font-stretch: 125%; font-weight: 850; font-size: 1.6rem; line-height: 1.1; }
+.reperes span { color: var(--gris); font-size: .95rem; }
+
+section { padding: clamp(4rem, 9vw, 7rem) 0; }
+
+/* Le club */
+.club { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+.club-photo img { border-radius: 6px; aspect-ratio: 4 / 5; object-fit: cover; width: 100%; }
+.principes { list-style: none; margin-top: 2rem; display: grid; gap: 1.5rem; }
+.principes li { padding-left: 1.25rem; border-left: 3px solid var(--violet); }
+.principes h3 { margin-bottom: .35rem; }
+.principes p { color: var(--gris); }
+
+/* Semaine */
+.semaine { background: var(--blanc); }
+.planning { width: 100%; border-collapse: collapse; margin-top: 2.5rem; }
+.planning th, .planning td { text-align: left; padding: 1.15rem 1rem; border-bottom: 1px solid var(--filet); vertical-align: top; }
+.planning thead th { font-size: .85rem; font-weight: 700; color: var(--gris); border-bottom: 2px solid var(--encre); }
+.planning tbody th { font-stretch: 125%; font-weight: 850; width: 9rem; }
+.planning td:nth-child(2) { font-weight: 700; }
+.planning td:last-child { color: var(--gris); }
+.note { margin-top: 1.25rem; color: var(--gris); font-size: .95rem; }
+
+/* Adhésion */
+.adhesion { display: grid; grid-template-columns: 1fr 1.3fr; gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.formules { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.formule { background: var(--blanc); border: 1px solid var(--filet); border-radius: 6px; padding: 2rem 1.75rem; }
+.formule.mise-en-avant { border: 2px solid var(--encre); }
+.formule h3 { margin-bottom: .75rem; }
+.formule .prix { margin-top: 0; color: var(--encre); font-stretch: 125%; font-weight: 900; font-size: 2.6rem; line-height: 1; margin-bottom: .25rem; }
+.prix small { font-size: 1rem; font-weight: 600; font-stretch: 100%; color: var(--gris); }
+.formule p { color: var(--gris); font-size: .98rem; margin-top: 1rem; }
+
+/* Équipe féminine */
+.feminines { background: var(--encre); color: var(--blanc); padding: 0; }
+.feminines-grille { display: grid; grid-template-columns: 1fr 1fr; }
+.feminines-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 40% 50%; min-height: 420px; }
+.feminines-texte { padding: clamp(3rem, 7vw, 6rem) clamp(1.5rem, 5vw, 5rem); display: flex; flex-direction: column; justify-content: center; }
+.feminines-texte p { color: rgba(255,255,255,.8); max-width: 50ch; }
+.palmares { list-style: none; margin-top: 2rem; display: grid; gap: .9rem; }
+.palmares li { display: flex; gap: 1rem; align-items: baseline; font-weight: 600; }
+.palmares li::before { content: ""; flex: 0 0 28px; height: 4px; background: var(--bande); transform: translateY(-4px); }
+
+/* Actualités Instagram */
+.actus-tete { display: flex; justify-content: space-between; align-items: end; gap: 2rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+.flux { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.flux a { position: relative; display: block; aspect-ratio: 1; overflow: hidden; border-radius: 6px; background: var(--encre-2); }
+.flux img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+.flux a:hover img { transform: scale(1.04); }
+.flux .legende { position: absolute; inset: auto 0 0 0; padding: 2.5rem 1rem .9rem; background: linear-gradient(transparent, rgba(21,26,61,.88)); color: var(--blanc); font-size: .9rem; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; opacity: 0; transition: opacity .25s; }
+.flux a:hover .legende, .flux a:focus-visible .legende { opacity: 1; }
+.flux-vide { grid-column: 1 / -1; background: var(--blanc); border: 1px dashed var(--filet); border-radius: 6px; padding: 3rem 2rem; text-align: center; color: var(--gris); }
+.flux-vide a { aspect-ratio: auto; background: none; display: inline; color: var(--violet); font-weight: 700; }
+
+/* Partenaires */
+.partenaires { background: var(--blanc); }
+.logos { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: 2.5rem; }
+.logos li { border: 1px solid var(--filet); border-radius: 6px; height: 120px; display: grid; place-items: center; padding: 1.25rem; background: var(--blanc); }
+.logos img { max-height: 70px; width: auto; max-width: 100%; object-fit: contain; }
+.devenir { margin-top: 2rem; color: var(--gris); }
+.devenir a { color: var(--violet); font-weight: 700; }
+
+/* Coaching */
+.coaching { padding: 0; }
+.coaching-boite { display: grid; grid-template-columns: auto 1fr auto; gap: 2rem; align-items: center; border: 1px solid var(--filet); border-radius: 6px; padding: 2rem 2.25rem; background: var(--blanc); margin: clamp(4rem, 9vw, 7rem) 0 0; }
+.coaching-boite img { width: 72px; height: 72px; }
+.coaching-boite p { color: var(--gris); }
+.coaching-boite h3 { margin-bottom: .3rem; }
+
+/* Candidature */
+.candidature { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.formulaire { display: grid; gap: 1rem; background: var(--blanc); border: 1px solid var(--filet); border-radius: 6px; padding: 2rem; }
+.formulaire label { font-weight: 700; font-size: .95rem; display: grid; gap: .4rem; }
+.formulaire input, .formulaire select, .formulaire textarea { font: inherit; font-weight: 400; padding: .85rem 1rem; border: 1px solid rgba(21,26,61,.25); border-radius: 6px; background: var(--papier); color: var(--encre); }
+.formulaire textarea { min-height: 140px; resize: vertical; }
+.formulaire .bouton { justify-self: start; margin-top: .5rem; }
+.message-envoi { font-weight: 700; }
+
+/* Pied de page */
+.pied { background: var(--encre); color: rgba(255,255,255,.8); padding: 3.5rem 0 2.5rem; font-size: .95rem; }
+.pied-grille { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; margin-bottom: 2.5rem; }
+.pied h2 { font-size: 1.2rem; color: var(--blanc); margin-bottom: .8rem; }
+.pied ul { list-style: none; display: grid; gap: .4rem; }
+.pied a { text-decoration: none; }
+.pied a:hover { color: var(--blanc); text-decoration: underline; }
+.pied-bas { border-top: 1px solid rgba(255,255,255,.12); padding-top: 1.5rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-size: .85rem; }
+.lien-bouton { background: none; border: 0; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; }
+
+/* Mentions légales */
+dialog { border: 0; border-radius: 8px; max-width: 720px; width: calc(100% - 2rem); padding: 2.5rem; color: var(--encre); }
+dialog::backdrop { background: rgba(21,26,61,.7); }
+dialog h2 { font-size: 1.6rem; }
+dialog h3 { font-size: 1rem; margin: 1.5rem 0 .4rem; }
+dialog p { color: var(--gris); font-size: .95rem; }
+dialog .fermer { float: right; }
+
+@media (max-width: 960px) {
+  .menu { display: none; position: absolute; top: 72px; left: 0; right: 0; background: var(--blanc); flex-direction: column; align-items: flex-start; padding: 1.5rem; gap: 1.1rem; border-bottom: 1px solid var(--filet); }
+  .menu.ouvert { display: flex; }
+  .menu-bouton { display: block; }
+  .accueil, .club, .adhesion, .feminines-grille, .candidature { grid-template-columns: 1fr; }
+  .accueil-photo { height: 52vh; order: -1; }
+  .reperes ul { grid-template-columns: 1fr 1fr; }
+  .reperes li { border-left: 0; padding-left: 0; border-top: 1px solid var(--filet); }
+  .flux { grid-template-columns: repeat(2, 1fr); }
+  .coaching-boite { grid-template-columns: 1fr; }
+  .pied-grille { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .formules { grid-template-columns: 1fr; }
+  .planning thead { display: none; }
+  .planning tr { display: grid; padding: 1rem 0; border-bottom: 1px solid var(--filet); }
+  .planning th, .planning td { border: 0; padding: .1rem 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="entete">
+  <div class="enveloppe">
+    <a class="marque" href="#haut" aria-label="Cercle Triathlon Toulouse, retour en haut">
+      <img src="images/logo-ctt.jpg" alt="" width="44" height="44">
+      <span>Cercle Triathlon<br>Toulouse</span>
+    </a>
+    <button class="menu-bouton" aria-expanded="false" aria-controls="menu">Menu</button>
+    <ul class="menu" id="menu">
+      <li><a href="#club">Le club</a></li>
+      <li><a href="#semaine">Entraînements</a></li>
+      <li><a href="#adhesion">Adhésion</a></li>
+      <li><a href="#actualites">Actualités</a></li>
+      <li><a href="#partenaires">Partenaires</a></li>
+      <li><a class="bouton" href="#candidature">Candidater</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="haut">
+
+  <div class="accueil">
+    <div class="accueil-texte">
+      <h1><span class="ligne">Progresser,</span><span class="ligne">ensemble.</span></h1>
+      <p>Club de triathlon au nord-ouest de Toulouse. Des entraînements encadrés dans les trois disciplines, une planification pensée pour durer, et un groupe volontairement limité à 60 licenciés.</p>
+      <div class="accueil-actions">
+        <a class="bouton clair" href="#candidature">Candidater au club</a>
+        <a class="lien" href="#semaine">Voir les entraînements</a>
+      </div>
+    </div>
+    <div class="accueil-photo">
+      <img src="images/galerie-2.jpg" alt="Six athlètes du Cercle Triathlon Toulouse en tenue du club après une course" width="1080" height="1079" fetchpriority="high">
+    </div>
+  </div>
+
+  <div class="reperes">
+    <ul class="enveloppe">
+      <li><strong>2025</strong><span>Création du club</span></li>
+      <li><strong>60 places</strong><span>Effectif maximum pour 2027</span></li>
+      <li><strong>4 séances</strong><span>Encadrées chaque semaine</span></li>
+      <li><strong>6e en France</strong><span>Équipe féminine D3 duathlon 2026</span></li>
+    </ul>
+  </div>
+
+  <section id="club">
+    <div class="enveloppe club">
+      <div>
+        <h2>Un club construit autour de l'entraînement</h2>
+        <p class="chapo">Le Cercle Triathlon Toulouse est né en 2025. Ici, chaque séance a une place dans la saison, et chaque licencié sait pourquoi il la fait.</p>
+        <ul class="principes">
+          <li>
+            <h3>Une saison planifiée</h3>
+            <p>Les séances suivent une logique commune entre natation, vélo et course à pied, du travail de fond de l'hiver jusqu'aux objectifs d'été.</p>
+          </li>
+          <li>
+            <h3>Un suivi pour chacun</h3>
+            <p>Les séances collectives sont publiées sur TrainingPeaks et adaptées au niveau de chaque licencié, du premier triathlon à l'Ironman.</p>
+          </li>
+          <li>
+            <h3>La santé d'abord</h3>
+            <p>On construit des athlètes pour plusieurs saisons. La régularité et l'absence de blessure passent avant le chrono du dimanche.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="club-photo">
+        <img src="images/galerie-4.jpg" alt="Athlètes du club alignés au départ d'une course" width="1080" height="1081" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="semaine" class="semaine">
+    <div class="enveloppe">
+      <h2>La semaine d'entraînement</h2>
+      <p class="chapo">Quatre rendez-vous encadrés, au nord-ouest de Toulouse. Le contenu de chaque séance est publié chaque semaine sur TrainingPeaks.</p>
+      <table class="planning">
+        <thead>
+          <tr><th scope="col">Jour</th><th scope="col">Séance</th><th scope="col">Horaire</th><th scope="col">Lieu</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Jeudi</th><td>Course à pied sur piste</td><td>18h30</td><td>Sesquières, Toulouse</td></tr>
+          <tr><th scope="row">Vendredi</th><td>Musculation encadrée</td><td>19h00</td><td>Premium Sport</td></tr>
+          <tr><th scope="row">Samedi</th><td>Natation, puis enchaînement course à pied</td><td>9h00</td><td>Piscine de Blagnac</td></tr>
+          <tr><th scope="row">Dimanche</th><td>Sortie vélo ou enchaînement, en deux groupes de niveau</td><td>9h00</td><td>Aeroscopia, Blagnac</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Les horaires peuvent évoluer selon les créneaux attribués par les municipalités. Les licenciés sont prévenus sur le groupe du club.</p>
+    </div>
+  </section>
+
+  <section id="adhesion">
+    <div class="enveloppe adhesion">
+      <div>
+        <h2>Adhésion annuelle</h2>
+        <p class="chapo">La licence FFTRI se prend en ligne sur l'espace Tri de la fédération, une fois la candidature acceptée.</p>
+        <p class="note">Le club prend en charge une partie de la licence des athlètes féminines.</p>
+      </div>
+      <div class="formules">
+        <div class="formule mise-en-avant">
+          <h3>Compétition</h3>
+          <p class="prix">250 € <small>par an</small></p>
+          <p>Pour les athlètes qui courent en compétition, en individuel ou avec les équipes du club.</p>
+        </div>
+        <div class="formule">
+          <h3>Loisir</h3>
+          <p class="prix">180 € <small>par an</small></p>
+          <p>Pour s'entraîner avec le groupe toute l'année, sans objectif de compétition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feminines" aria-labelledby="titre-feminines">
+    <div class="feminines-grille">
+      <div class="feminines-photo">
+        <img src="images/galerie-3.jpg" alt="Athlète de l'équipe féminine du club en contre-la-montre à vélo" width="1080" height="1084" loading="lazy">
+      </div>
+      <div class="feminines-texte">
+        <h2 id="titre-feminines">L'équipe féminine</h2>
+        <p>La féminisation est un axe fort du club, avec une part de licenciées bien au-dessus de la moyenne fédérale. En 2026, l'équipe féminine a disputé sa première saison en D3 duathlon.</p>
+        <ul class="palmares">
+          <li>6e de la finale du championnat de France D3 duathlon 2026</li>
+          <li>Seul club d'Occitanie qualifié pour cette finale</li>
+          <li>Championne d'Occitanie</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="actualites">
+    <div class="enveloppe">
+      <div class="actus-tete">
+        <div>
+          <h2>Actualités</h2>
+          <p class="chapo">Courses, stages et vie du club, en direct de notre compte Instagram.</p>
+        </div>
+        <a class="bouton" href="https://instagram.com/cercletriathlontoulouse" target="_blank" rel="noopener">Suivre sur Instagram</a>
+      </div>
+      <div class="flux" id="flux" data-flux="">
+        <p class="flux-vide">Retrouvez toutes nos actualités sur <a href="https://instagram.com/cercletriathlontoulouse" target="_blank" rel="noopener">Instagram</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="partenaires" class="partenaires">
+    <div class="enveloppe">
+      <h2>Ils soutiennent le club</h2>
+      <ul class="logos">
+        <li><img src="images/volvo.jpg" alt="Volvo" width="400" height="400" loading="lazy"></li>
+        <li><img src="images/optic-2000.jpg" alt="Optic 2000 Blagnac" width="1200" height="428" loading="lazy"></li>
+        <li><img src="images/premium-sport.jpg" alt="Premium Sport" width="700" height="674" loading="lazy"></li>
+        <li><img src="images/terre-de-running.jpg" alt="Terre de Running Saint-Jory" width="376" height="134" loading="lazy"></li>
+        <li><img src="images/urbaloc.jpg" alt="Urbaloc, location et vente de matériel BTP" width="558" height="90" loading="lazy"></li>
+        <li><img src="images/ql-baticoncept.jpg" alt="QL Baticoncept" width="700" height="700" loading="lazy"></li>
+        <li><img src="images/neo-tp.jpg" alt="NEO TP" width="512" height="151" loading="lazy"></li>
+      </ul>
+      <p class="devenir">Votre entreprise veut soutenir un club local ? <a href="mailto:cercletriathlontoulouse@gmail.com?subject=Partenariat%20Cercle%20Triathlon%20Toulouse">Écrivez-nous</a>.</p>
+    </div>
+  </section>
+
+  <div class="enveloppe">
+    <aside class="coaching coaching-boite" aria-label="Coaching individuel">
+      <img src="images/cercle-endurance.jpg" alt="" width="72" height="72" loading="lazy">
+      <div>
+        <h3>Besoin d'un suivi individuel ?</h3>
+        <p>Pour un plan sur mesure vers un 70.3 ou un Ironman, en plus des séances club, Cercle Endurance propose un coaching personnalisé.</p>
+      </div>
+      <a class="bouton" href="https://www.cercleendurance.com/" target="_blank" rel="noopener">Découvrir Cercle Endurance</a>
+    </aside>
+  </div>
+
+  <section id="candidature">
+    <div class="enveloppe candidature">
+      <div>
+        <h2>Candidater au club</h2>
+        <p class="chapo">L'effectif est limité à 60 licenciés pour garder un vrai suivi. Présentez-vous en quelques lignes, on vous répond rapidement.</p>
+        <p class="note">Une question avant de candidater ? <a href="mailto:cercletriathlontoulouse@gmail.com">cercletriathlontoulouse@gmail.com</a></p>
+      </div>
+      <form class="formulaire" id="formulaire" action="https://formspree.io/f/xjgqjjal" method="POST">
+        <label>Nom et prénom
+          <input type="text" name="Nom complet" autocomplete="name" required>
+        </label>
+        <label>Adresse mail
+          <input type="email" name="_replyto" autocomplete="email" required>
+        </label>
+        <label>Formule envisagée
+          <select name="Formule">
+            <option>Compétition</option>
+            <option>Loisir</option>
+            <option>Je ne sais pas encore</option>
+          </select>
+        </label>
+        <label>Votre pratique et vos objectifs
+          <textarea name="Projet sportif" required></textarea>
+        </label>
+        <input type="hidden" name="_subject" value="Nouvelle candidature CTT">
+        <button class="bouton" type="submit">Envoyer ma candidature</button>
+        <p class="message-envoi" id="message-envoi" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<div class="bande" role="presentation"></div>
+<footer class="pied">
+  <div class="enveloppe">
+    <div class="pied-grille">
+      <div>
+        <h2>Cercle Triathlon Toulouse</h2>
+        <p>Association loi 1901 affiliée à la Fédération française de triathlon. Toulouse, Blagnac et nord-ouest toulousain.</p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="mailto:cercletriathlontoulouse@gmail.com">cercletriathlontoulouse@gmail.com</a></li>
+          <li><a href="#candidature">Candidater</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Suivre le club</h2>
+        <ul>
+          <li><a href="https://instagram.com/cercletriathlontoulouse" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.strava.com/clubs/1325944" target="_blank" rel="noopener">Strava</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pied-bas">
+      <span>© 2026 Cercle Triathlon Toulouse</span>
+      <button class="lien-bouton" type="button" id="ouvrir-mentions">Mentions légales et données personnelles</button>
+    </div>
+  </div>
+</footer>
+
+<dialog id="mentions" aria-labelledby="titre-mentions">
+  <form method="dialog"><button class="bouton fermer" aria-label="Fermer">Fermer</button></form>
+  <h2 id="titre-mentions">Mentions légales</h2>
+  <h3>Éditeur</h3>
+  <p>Cercle Triathlon Toulouse, association loi 1901, Toulouse. Directeur de la publication Nicolas Quenette, président. Contact cercletriathlontoulouse@gmail.com.</p>
+  <h3>Conception</h3>
+  <p>Design d'origine par Lily Le Petit.</p>
+  <h3>Hébergement</h3>
+  <p>GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis, +1 877 448 4820. Nom de domaine enregistré chez OVH SAS, 2 rue Kellermann, 59100 Roubaix, France.</p>
+  <h3>Propriété intellectuelle</h3>
+  <p>Les textes et photographies du site appartiennent au club. Les logos des partenaires restent la propriété de leurs titulaires.</p>
+  <h3>Données personnelles</h3>
+  <p>Les informations envoyées par le formulaire de candidature servent uniquement à répondre à votre demande. Elles ne sont ni revendues ni utilisées à des fins commerciales. Vous pouvez demander leur suppression à cercletriathlontoulouse@gmail.com. Le site n'utilise pas de cookie de suivi.</p>
+</dialog>
+
+<script>
+// Menu mobile
+const menuBouton = document.querySelector('.menu-bouton');
+const menu = document.getElementById('menu');
+menuBouton.addEventListener('click', () => {
+  const ouvert = menu.classList.toggle('ouvert');
+  menuBouton.setAttribute('aria-expanded', ouvert);
+});
+menu.addEventListener('click', e => { if (e.target.closest('a')) { menu.classList.remove('ouvert'); menuBouton.setAttribute('aria-expanded', false); } });
+
+// Mentions légales
+document.getElementById('ouvrir-mentions').addEventListener('click', () => document.getElementById('mentions').showModal());
+
+// Formulaire sans quitter la page
+const formulaire = document.getElementById('formulaire');
+formulaire.addEventListener('submit', async e => {
+  e.preventDefault();
+  const message = document.getElementById('message-envoi');
+  message.textContent = 'Envoi en cours';
+  try {
+    const r = await fetch(formulaire.action, { method: 'POST', body: new FormData(formulaire), headers: { Accept: 'application/json' } });
+    if (!r.ok) throw new Error();
+    formulaire.reset();
+    message.textContent = 'Candidature envoyée. On vous répond rapidement.';
+  } catch {
+    message.textContent = "L'envoi n'a pas abouti. Écrivez-nous directement à cercletriathlontoulouse@gmail.com.";
+  }
+});
+
+// Actualités Instagram (flux JSON Behold, identifiant dans data-flux)
+(async () => {
+  const zone = document.getElementById('flux');
+  const id = zone.dataset.flux;
+  if (!id) return;
+  try {
+    const r = await fetch('https://feeds.behold.so/' + id);
+    if (!r.ok) throw new Error();
+    const data = await r.json();
+    const posts = (data.posts || data).slice(0, 6);
+    if (!posts.length) return;
+    zone.innerHTML = '';
+    for (const p of posts) {
+      const a = document.createElement('a');
+      a.href = p.permalink; a.target = '_blank'; a.rel = 'noopener';
+      const img = document.createElement('img');
+      img.loading = 'lazy';
+      img.src = (p.sizes && p.sizes.medium && p.sizes.medium.mediaUrl) || p.thumbnailUrl || p.mediaUrl;
+      const texte = (p.prunedCaption || p.caption || '').trim();
+      img.alt = texte ? texte.slice(0, 120) : 'Publication Instagram du club';
+      const leg = document.createElement('span');
+      leg.className = 'legende'; leg.textContent = texte;
+      a.append(img, leg);
+      zone.append(a);
+    }
+  } catch { /* on garde le lien vers Instagram */ }
+})();
+</script>
+</body>
+</html>
