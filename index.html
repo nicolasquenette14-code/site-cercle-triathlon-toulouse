@@ -46,7 +46,7 @@
       "sport": ["Triathlon", "Duathlon"],
       "foundingDate": "2024",
       "email": "cercletriathlontoulouse@gmail.com",
-      "priceRange": "180 € à 275 € par an",
+      "priceRange": "275 € par an",
       "address": { "@type": "PostalAddress", "addressLocality": "Toulouse", "postalCode": "31000", "addressRegion": "Occitanie", "addressCountry": "FR" },
       "areaServed": ["Toulouse", "Blagnac", "Aussonne", "Beauzelle", "Cornebarrieu", "Colomiers"],
       "memberOf": { "@type": "SportsOrganization", "name": "Fédération française de triathlon" },
@@ -64,8 +64,8 @@
       "@type": "FAQPage",
       "mainEntity": [
         { "@type": "Question", "name": "Où s'entraîne le Cercle Triathlon Toulouse ?", "acceptedAnswer": { "@type": "Answer", "text": "Au nord-ouest de Toulouse. Course à pied sur la piste de Sesquières à Toulouse, natation à la piscine de Blagnac, sorties vélo au départ d'Aeroscopia à Blagnac et musculation chez Premium Sport." } },
-        { "@type": "Question", "name": "Le club accepte-t-il les débutants en triathlon ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Les séances sont adaptées au niveau de chacun, du premier triathlon jusqu'à l'Ironman. La formule Loisir permet de s'entraîner avec le groupe sans faire de compétition." } },
-        { "@type": "Question", "name": "Combien coûte l'adhésion au club ?", "acceptedAnswer": { "@type": "Answer", "text": "275 € par an pour la formule Compétition et 180 € par an pour la formule Loisir. Le club prend en charge une partie de la licence des athlètes féminines." } },
+        { "@type": "Question", "name": "Le club accepte-t-il les débutants en triathlon ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Les séances sont adaptées au niveau de chacun, du premier triathlon jusqu'à l'Ironman." } },
+        { "@type": "Question", "name": "Combien coûte l'adhésion au club ?", "acceptedAnswer": { "@type": "Answer", "text": "L'adhésion annuelle est de 275 €. Le club prend en charge une partie de la licence des athlètes féminines." } },
         { "@type": "Question", "name": "Comment rejoindre le club ?", "acceptedAnswer": { "@type": "Answer", "text": "Envoyez votre candidature avec le formulaire du site. L'effectif est limité à 60 licenciés pour garder un vrai suivi. La licence FFTRI se prend ensuite en ligne." } },
         { "@type": "Question", "name": "Y a-t-il une équipe féminine ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. L'équipe féminine court en D3 duathlon. En 2026, elle a terminé 6e de la finale du championnat de France et championne d'Occitanie." } }
       ]
@@ -183,7 +183,7 @@ section { padding: clamp(4rem, 9vw, 7rem) 0; }
 
 /* Adhésion */
 .adhesion { display: grid; grid-template-columns: 1fr 1.3fr; gap: clamp(2rem, 6vw, 5rem); align-items: start; }
-.formules { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.formules { display: grid; grid-template-columns: 1fr; gap: 1.25rem; max-width: 440px; }
 .formule { background: var(--blanc); border: 1px solid var(--filet); border-radius: 6px; padding: 2rem 1.75rem; }
 .formule.mise-en-avant { border: 2px solid var(--encre); }
 .formule h3 { margin-bottom: .75rem; }
@@ -403,14 +403,9 @@ dialog .fermer { float: right; }
       </div>
       <div class="formules">
         <div class="formule mise-en-avant">
-          <h3>Compétition</h3>
+          <h3>Adhésion annuelle</h3>
           <p class="prix">275 € <small>par an</small></p>
-          <p>Pour les athlètes qui courent en compétition, en individuel ou avec les équipes du club.</p>
-        </div>
-        <div class="formule">
-          <h3>Loisir</h3>
-          <p class="prix">180 € <small>par an</small></p>
-          <p>Pour s'entraîner avec le groupe toute l'année, sans objectif de compétition.</p>
+          <p>Accès à toutes les séances encadrées du club, au suivi sur TrainingPeaks et aux courses avec les équipes du club.</p>
         </div>
       </div>
     </div>
@@ -493,11 +488,11 @@ dialog .fermer { float: right; }
         </details>
         <details>
           <summary>Le club accepte-t-il les débutants en triathlon ?</summary>
-          <p>Oui. Les séances sont adaptées au niveau de chacun, du premier triathlon jusqu'à l'Ironman. La formule Loisir permet de s'entraîner avec le groupe sans faire de compétition.</p>
+          <p>Oui. Les séances sont adaptées au niveau de chacun, du premier triathlon jusqu'à l'Ironman.</p>
         </details>
         <details>
           <summary>Combien coûte l'adhésion au club ?</summary>
-          <p>275 € par an pour la formule Compétition et 180 € par an pour la formule Loisir. Le club prend en charge une partie de la licence des athlètes féminines.</p>
+          <p>L'adhésion annuelle est de 275 €. Le club prend en charge une partie de la licence des athlètes féminines.</p>
         </details>
         <details>
           <summary>Comment rejoindre le club ?</summary>
@@ -524,13 +519,6 @@ dialog .fermer { float: right; }
         </label>
         <label>Adresse mail
           <input type="email" name="_replyto" autocomplete="email" required>
-        </label>
-        <label>Formule envisagée
-          <select name="Formule">
-            <option>Compétition</option>
-            <option>Loisir</option>
-            <option>Je ne sais pas encore</option>
-          </select>
         </label>
         <label>Votre pratique et vos objectifs
           <textarea name="Projet sportif" required></textarea>
